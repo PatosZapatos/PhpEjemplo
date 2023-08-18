@@ -1,7 +1,7 @@
 <?php 
 include ('menu.php');
 header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
-  header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
+header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 ?>
 <html lang="es">
 	<head>
@@ -29,7 +29,7 @@ function subirDocumentoDrive($documento){
 
     $client = new Google_Client();
     $client->useApplicationDefaultCredentials();
-    $client->setScopes(['https://www.googleapis.com/auth/drive.file']);
+    $client->setScopes(["https://www.googleapis.com/auth/drive.file"]);
     try{		
         //instanciamos el servicio
         $service = new Google_Service_Drive($client);
@@ -54,7 +54,9 @@ function subirDocumentoDrive($documento){
             'uploadType' => 'media',
           )
         );
+        $foto = $result->id;
         echo "2.- Fichero subido a Google Drive. ";
+        return $foto;
     }catch(Google_Service_Exception $gs){
         $m=json_decode($gs->getMessage());
         echo $m->error->message;
@@ -69,11 +71,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	$nom = $_POST['nombre'];
 	$ed = $_POST['edad'];
     $mail = $_POST['mail'];
+   
     
     // Subimos el documento a nuestro servidor.
     if(move_uploaded_file($_FILES['documento']['tmp_name'], $documento)){
         echo "1.- Fichero subido al servidor. ";
-        subirDocumentoDrive($documento);
+        $foto = subirDocumentoDrive($documento);
         
         if (unlink($documento)){
             echo "3.- Fichero eliminado del servidor";
@@ -91,7 +94,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 $base = "gestion";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 
-$cadena= "INSERT INTO persona(apellido, nombre, edad, mail) VALUES ('$ape','$nom','$ed','$mail')";
+$cadena= "INSERT INTO persona(apellido, nombre, edad, mail,foto) VALUES ('$ape','$nom','$ed','$mail','$foto')";
 
 $resultado = mysqli_query($Conexion,$cadena);
 
@@ -101,11 +104,13 @@ if($resultado){
 	<h3 style='margin-left:20px;'>".$nom."</h3>
 	<h3 style='margin-left:20px;'>".$ed." </h3>
     <h3 style='margin-left:20px;'>".$mail." </h3>
+    <img src='https://drive.google.com/uc?export=download&id=".$foto."' style='width:30px;height:20px'>
 	<h3 style='margin-left:20px;'>Se ha insertado un registro</h3></div>"."<br>";
 
 }else{
 	echo "<h3>NO se ha generado un registro</h3></div>"."<br>";
 }
  ?>
+
     </body>
 </html>

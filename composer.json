@@ -1,0 +1,19 @@
+{
+    "name": "lucio/php-ejemplo",
+    "description": "Ejemplo de drive api",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Lucio\\PhpEjemplo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "luciogayoso"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "google/apiclient": "2.12.1"
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "phpdriive",
+  "private_key_id": "392834bd507fc5103874a457c53098ae957c46d8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDWzobjHnlui/K4\nuFaFYzWIjlVudi0PH4ThrolWGN3wr7bR3lX94lz+z7OXYWCquBpFVBrPj4LsnjGk\nIgKnLZNtSUGL/zGkKBKppFK0gCffdy/tjjpwHvmEvnw49GdtO00qrSGiHo6t1yls\nPpHFmjWAfrPzrQ4jP1PKHqj4jm7KBHVaeT1MQwX+qeTBeTIWdDKvkgHMdMtjBvaV\nFVdHcDETzWstiYP4xK7gw/zXb1lUBCxn7XU2tD/c/v0BqTzti4n6U14SiE0ebPB8\neFIRDbiWTd54XK2z5GiUIy+591H4wg4t/zjTvTl6oCWQFdxOF6HZWzhylgfhbrt3\nnkYuCyHDAgMBAAECggEALruL2QmePZCw48Mm/6oP0X+10mxfbTTcQgUo19RdJKn1\nyj7m0m9W8BDb74k98KZRANhFZPbB8xyPjDfh/+EIe/Q+EGkasa4OMV4QqDhhdFqH\n0NTqnc3/VwPiHrn9bmRCa5BzCsQ/Ik73MheCu0zLawMlv1PdCYoTfpuhA0JplAVy\nKkrdt4aZM4k8srjgI+qJ8sRptMuC/A/JpkfOsbJtml6A2t7iD6zbfVO8Fvbwf1iN\nkmYfFruWw7yIxAb4inJmA/OuwTLfTYK3i77n01CkvShNi1QT4/KWpVb4m9l5E8ZD\nJRKJhUYedC29e4XkRiH1iLMZsl/g42GUFqp3ps5gMQKBgQD0lChIe+Wy5Kd4HraL\nMlMxk2MSRPtyWPAjWF6y5kyuczoSm01AIJoxQV2+nUT9xSjASHg3PVY56LAe0o47\nnUYAH7G+2ortLsDv7Da+G8BDx9E9S+criA/9cRkEROZmUgrlXF/H/i4pO8I15mk/\nxIsuT40a1PdC7n/xRb6CSncxJQKBgQDg1nUCaqmnz2Gd3mDIWD+jQTMg61EiCJEs\nr9l+LjLbM7tBa7WD5a/7X/8xW+bt0B89PmG3Z73NqPtw1DkNI2dSOUI7snv7tJmi\nJhAsiM+guklyGkum3tSx87e42tUmcujguWO2W9TgcciKRGJjzLIOAoWkktrcBCk5\ncEZs22PWxwKBgQCKb33poS9ftarRA9lhKogKbJlMEv2cOJkb+H4Jlu9aYuBA/eSY\n4ptEO/J63PvbBAjP5XUeFzrCJmHh4F4fgiLIGSh7lanDHI6afsJxkrWd5/EYV+ku\nK6KZWrXFQ9aBnfiK4GFaixXHwwpnhdaXAIGjIeYFhPu7x9FlWIu/pbSXfQKBgByS\nI/xSoYx5heYRxCqxTCTqvByKypyQiiIrlm+6XywLvtfpX/+KyHohEMSs8QN3VwDp\nVHGB9VSVDJ6h2T4aKZ8BN7FuVOL/aCZ6v8No/zllcr/VJ5fk6RJT7hzHch6Yq48i\n/9DEiqCa1Oj9F6Om91lgaKspHjanMLXj1o8usdkxAoGBAMmSdPBcSwzAtYti3dZj\n55jvclK6vVaPNQopPbbiQk1KJRoYT+F///1rdEeKGfuGQPuEhuYj6nTA3Zibbz8t\nmnxAzrPQVMI3gRHmUrEHmXhgKOc7d3Ej0KTNlb00+DSvItsk2z4fT5NSzYILd66t\njg3FsuodgPiLZSXf4JAfurrJ\n-----END PRIVATE KEY-----\n",
+  "client_email": "phpdrive@phpdriive.iam.gserviceaccount.com",
+  "client_id": "111104325925858482344",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/phpdrive%40phpdriive.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

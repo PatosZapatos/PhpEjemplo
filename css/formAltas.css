@@ -1,34 +1,40 @@
-.container{
+.container {
     margin: 50px;
     display: flex;
     flex-direction: column;
 }
 
-.altaTitulo{
+.altaTitulo {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.altaInput{
+.altaInput {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
 }
 
-.grupoInputs{
+.grupoInputs {
     width: 50%;
     margin: 10px;
 }
 
-.grupoInputs input{
+.grupoInputs input {
     width: 70%;
 }
 
-.grupoInputs label{
+.grupoInputs label {
     padding: 10px;
 }
 
-.btn-submit{
+.btn-submit {
     width: 20%;
-    align-self:flex-end;
+    align-self: flex-end;
+}
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

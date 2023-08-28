@@ -17,3 +17,13 @@
 .trmain th{
     border: 1px solid black;
 }
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-text {
+    text-align: center;
+}
